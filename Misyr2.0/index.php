@@ -1,6 +1,4 @@
-<?php
-  $mapa = "<iframe src=https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3344.6536688647966!2d-71.52601588481127!3d-33.03925368089359!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9689de8af26d2ddd%3A0x2fb264be80bf7081!2sLimache+3117%2C+Vi%C3%B1a+del+Mar%2C+Regi%C3%B3n+de+Valpara%C3%ADso!5e0!3m2!1ses!2scl!4v1522942921280 width=600 height=450 frameborder=0 style=border:0 allowfullscreen></iframe>";
-?>
+
 <!DOCTYPE html>
 <html >
 <head>
@@ -41,7 +39,7 @@
         <div class="menu-logo">
             <div class="navbar-brand">
 
-                <span class="navbar-caption-wrap"><a class="navbar-caption text-white display-4" href="https://mobirise.com">MAESTRANZA MISYR</a></span>
+                <span class="navbar-caption-wrap"><a class="navbar-caption text-white display-4" href="index.php">MAESTRANZA MISYR</a></span>
             </div>
         </div>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
@@ -79,9 +77,11 @@
                     <h2 class="mbr-fonts-style display-1">
                       Maestranza Misyr Ltda.
                     </h2>
-                    <p class="lead mbr-text mbr-fonts-style display-5">
-                      "Slogan"
-                    </p>
+                      <div class="colorslider">
+                        <p class="lead mbr-text mbr-fonts-style display-5">
+                          La empresa la hacemos todos y cada uno de nuestros actos
+                        </p>
+                      </div>
                   </div>
                 </div>
               </div>
@@ -96,9 +96,11 @@
                 <div class="carousel-caption justify-content-center">
                   <div class="col-10 align-center"><h2 class="mbr-fonts-style display-1">
                     MISION</h2>
+                    <div class="colorslider2">
                     <p class="lead mbr-text mbr-fonts-style display-5">
-                      "Mision"
+                      Trabajamos conjuntamente con nuestro equipo para brindar un servicio de excelencia y alta calidad técnica en trabajos de maestranza e ingeniería a todos nuestros clientes, a través de las mejores prácticas e innovación.
                     </p>
+                  </div>
                   </div>
                 </div>
               </div>
@@ -115,9 +117,11 @@
                     <h2 class="mbr-fonts-style display-1">
                       VISION
                     </h2>
+                    <div>
                     <p class="lead mbr-text mbr-fonts-style display-5">
-                      "vision"
+                      Permanecer, crecer y ser líder en el mercado nacional de manera confiable en forma competitiva y rentable.
                     </p>
+                  </div>
                   </div>
                 </div>
               </div>
@@ -134,9 +138,9 @@
                 <h1 class="mbr-section-title align-center mbr-bold pb-3 mbr-fonts-style display-1">Quienes Somos</h1>
 
                 <p class="mbr-text align-center pb-3 mbr-fonts-style display-5">
-                    Full width intro with adjustable height, background image and a color overlay. Click any text to edit or style it.
+                    Maestranza Misyr Limitada, se encuentra en pleno funcionamiento y a disposición para la ejecución de trabajos de ingeniería y aquellos propios de maestranza,
                 </p>
-                <div class="mbr-section-btn align-center"><a class="btn btn-md btn-primary display-4" href="https://mobirise.com">SABER MÁS</a></div>
+                <div class="mbr-section-btn align-center"><a class="btn btn-md btn-primary display-4" href="quienesSomos.html">SABER MÁS</a></div>
             </div>
         </div>
     </div>
@@ -344,8 +348,8 @@
     <div class="container">
         <div class="media-container-row content mbr-white">
             <div class="col-12 col-md-3 mbr-fonts-style display-7">
-                <p class="mbr-text"><strong>Dirección</strong><br>
-                    <br>Calle Limache 3117, El Salto, Viña Del Mar.&nbsp;<br>
+                <p class="mbr-text"><strong>Direccion</strong><br>
+                    <br>Calle Limache 3117, El Salto, Vina Del Mar.&nbsp;<br>
                     <br>
                     <br><strong>Contacto</strong><br>
                     <br>Correo: maestranza@misyr.cl<br>Fono:&nbsp;<br>Celular:&nbsp;</p>
@@ -354,14 +358,15 @@
                 <p class="mbr-text"><strong>Redes Sociales</strong><br>
                     <br>FACEBOOK<br><br><br>
                     <br><strong>Trabaja con Nosotros</strong><br>
-                    <br>¿Te gustaría trabajar con nosotros? PINCHA AQUÍ</p>
+                    <br>?Te gustaria trabajar con nosotros? PINCHA AQUI</p>
             </div>
-            <div class="col-12 col-md-6">
-                <div class="google-map">
-                  <?php echo $mapa;?>
-                </div>
+          <div class="col-12 col-md-6">
+            <div class="google-maps">
+              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3344.6536688647966!2d-71.52601588481127!3d-33.03925368089359!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9689de8af26d2ddd%3A0x2fb264be80bf7081!2sLimache+3117%2C+Vi%C3%B1a+del+Mar%2C+Regi%C3%B3n+de+Valpara%C3%ADso!5e0!3m2!1ses!2scl!4v1522942921280" width="600" height="450" frameborder="0" style="border:0"></iframe>
             </div>
+          </div>
         </div>
+      </div>
         <div class="footer-lower">
             <div class="media-container-row">
                 <div class="col-sm-12">

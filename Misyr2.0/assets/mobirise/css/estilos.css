@@ -3,3 +3,27 @@
   padding-bottom: 90px;
   background-image:url("../../../assets/images/piedepagina.jpg");
 }
+
+    .google-maps {
+        position: relative;
+        padding-bottom: 60px; // This is the aspect ratio
+        overflow: hidden;
+    }
+    .google-maps iframe {
+
+        top: 0;
+        width: 100% !important;
+
+    }
+
+.colorslider{
+  margin: auto;
+  width: 55%;
+  background-color: #0000003b;
+}
+
+.colorslider2{
+  margin: auto;
+  width: 90%;
+  background-color: #0000003b;
+}

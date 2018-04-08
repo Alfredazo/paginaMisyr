@@ -27,3 +27,22 @@
   width: 90%;
   background-color: #0000003b;
 }
+
+
+.loader2{
+    position: fixed;
+    left: 0px;
+    top: 0px;
+    width: 100%;
+    height: 100%;
+    z-index: 9999;
+    background: url('../../images/logo.png') 50% 50% no-repeat rgb(249,249,249);
+    opacity: .8;
+}
+
+.MensajeContacto{
+  color: white;
+  width: 90%;
+  background-color: #0000003b;
+  font-size: 20px;
+}

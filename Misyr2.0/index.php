@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html >
 <head>
@@ -286,10 +285,6 @@
 </section>
 
 <section class="mbr-section form1 cid-qOio2M6D9S mbr-parallax-background" id="form1-w">
-
-
-
-
     <div class="container">
         <div class="row justify-content-center">
             <div class="title col-12 col-lg-8">
@@ -301,45 +296,46 @@
         </div>
     </div>
     <div class="container">
-        <div class="row justify-content-center">
-            <div class="media-container-column col-lg-8" data-form-type="formoid">
-                    <div data-form-alert="" hidden="">
-                        Thanks for filling out the form!
-                    </div>
+            <div class="row justify-content-center">
+                <div class="media-container-column col-lg-8" data-form-type="formoid">
+                  <div class="loader2"></div>
+                        <form id="ajax-contact" class="mbr-form" action="Contacto/contacto.php" method="post">
+                            <div class="row row-sm-offset">
+                                <div class="col-md-4 multi-horizontal" data-for="name">
+                                    <div class="form-group">
+                                        <label class="form-control-label mbr-fonts-style display-7" for="name-form1-m">Nombre</label>
+                                        <input type="text" class="form-control" name="nombre" data-form-field="Name" required="" id="name-form1-m">
+                                    </div>
+                                </div>
+                                <div class="col-md-4 multi-horizontal" data-for="email">
+                                    <div class="form-group">
+                                        <label class="form-control-label mbr-fonts-style display-7" for="email-form1-m">Correo Electronico</label>
+                                        <input type="email" class="form-control" name="correo" data-form-field="Email" required="" id="email-form1-m">
+                                    </div>
+                                </div>
+                                <div class="col-md-4 multi-horizontal" data-for="phone">
+                                    <div class="form-group">
+                                        <label class="form-control-label mbr-fonts-style display-7" for="phone-form1-m">Nro° Contacto</label>
+                                        <input type="tel" class="form-control" name="telefono" data-form-field="Phone" id="phone-form1-m">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-group" data-for="message">
+                                <label class="form-control-label mbr-fonts-style display-7" for="message-form1-m">Mensaje</label>
+                                <textarea type="text" class="form-control" name="mensaje" rows="7" data-form-field="Message" id="message-form1-m"></textarea>
+                            </div>
 
-                    <form class="mbr-form" action="https://mobirise.com/" method="post" data-form-title="Mobirise Form"><input type="hidden" name="email" data-form-email="true" value="cIUjLZlN1PKgeG670sJn4CvW0Fv+n+jBxIFEcOvsrzzGCeBM63ncH3ePA2ovACjfSbcOCOgx78d6znUgBB3mMln8eb+MdojA1WQqBm4OaH1S8pUtsF3gqKnOOYmTh/nm" data-form-field="Email">
-                        <div class="row row-sm-offset">
-                            <div class="col-md-4 multi-horizontal" data-for="name">
-                                <div class="form-group">
-                                    <label class="form-control-label mbr-fonts-style display-7" for="name-form1-w">Name</label>
-                                    <input type="text" class="form-control" name="name" data-form-field="Name" required="" id="name-form1-w">
-                                </div>
+                            <div class="row">
+                              <span class="input-group-btn col-12 col-md-6">
+                                  <button type="submit" class="btn btn-primary btn-form display-4">ENVIAR MENSAJE</button>
+                              </span>
+                              <div id="respuesta" class="MensajeContacto col-12 col-md-6">
+                              </div>
                             </div>
-                            <div class="col-md-4 multi-horizontal" data-for="email">
-                                <div class="form-group">
-                                    <label class="form-control-label mbr-fonts-style display-7" for="email-form1-w">Email</label>
-                                    <input type="email" class="form-control" name="email" data-form-field="Email" required="" id="email-form1-w">
-                                </div>
-                            </div>
-                            <div class="col-md-4 multi-horizontal" data-for="phone">
-                                <div class="form-group">
-                                    <label class="form-control-label mbr-fonts-style display-7" for="phone-form1-w">Phone</label>
-                                    <input type="tel" class="form-control" name="phone" data-form-field="Phone" id="phone-form1-w">
-                                </div>
-                            </div>
-                        </div>
-                        <div class="form-group" data-for="message">
-                            <label class="form-control-label mbr-fonts-style display-7" for="message-form1-w">Message</label>
-                            <textarea type="text" class="form-control" name="message" rows="7" data-form-field="Message" id="message-form1-w"></textarea>
-                        </div>
-
-                        <span class="input-group-btn">
-                            <button href="" type="submit" class="btn btn-primary btn-form display-4">SEND FORM</button>
-                        </span>
-                    </form>
+                        </form>
+                </div>
             </div>
-        </div>
-    </div>
+          </div>
 </section>
 
 <section class="piedepagina mbr-parallax-background" id="footer1-e" data-rv-view="45">
@@ -380,6 +376,9 @@
                 </div>
                 <div class="col-md-6">
                     <div class="social-list align-right">
+
+
+
                         <div class="soc-item">
                             <a href="https://twitter.com/mobirise" target="_blank">
                                 <span class="socicon-twitter socicon mbr-iconfont mbr-iconfont-social" media-simple="true"></span>
@@ -411,6 +410,32 @@
   <script src="assets/slidervideo/script.js"></script>
   <script src="assets/formoid/formoid.min.js"></script>
 
+  <script type="text/javascript">
+            $(document).ready(function () {
+                $('.loader2').hide();
+                $('#respuesta').hide();                
+                $('#ajax-contact').submit(function () {
+                    $(".loader2").fadeOut("slow");
+                    $(".loader2").fadeIn("slow");
+                    $('#respuesta').hide();
+                    $.ajax({
+                        type: 'POST',
+                        url: "Contacto/contacto.php",
+                        data: $(this).serialize(),
+                        success: function (data) {
+                            $('#respuesta').html(data);
+                            document.getElementById("name-form1-m").value = "";
+                            document.getElementById("email-form1-m").value = "";
+                            document.getElementById("phone-form1-m").value = "";
+                            document.getElementById("message-form1-m").value = "";
+                            $(".loader2").hide("slow");
+                            $('#respuesta').fadeIn('slow');
+                        }
+                    })
+                    return false;
+                });
+            });
+    </script>
 
 </body>
 </html>

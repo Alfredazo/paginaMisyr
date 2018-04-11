@@ -21,7 +21,7 @@ require '../vendor/autoload.php';
         $mail->isSMTP();                                      // Set mailer to use SMTP
         $mail->Host = 'smtp.gmail.com';                         // Specify main and backup SMTP servers
         $mail->SMTPAuth = true;                               // Enable SMTP authentication
-        $mail->Username = '';                  // SMTP username
+        $mail->Username = 'misyr.mantencion.nuevo@gmail.com';                  // SMTP username
         $mail->Password = '';                           // SMTP password
         //$mail->SMTPSecure = 'tls';                            // Enable TLS encryption, `ssl` also accepted
         $mail->SMTPOptions = array(
@@ -32,10 +32,10 @@ require '../vendor/autoload.php';
           )
         );
         $mail->Port = 25;                                    // TCP port to connect to
-        $mail->SMTPDebug = 2;
+/*        $mail->SMTPDebug = 2; */
         //Recipients
-        $mail->setFrom('email', 'Sr.Noreply - Enviado: '.$fecha.''); // este manda
-        $mail->addAddress('email', 'Maestranza Misyr');     // este recibe
+        $mail->setFrom('misyr.mantencion.nuevo@gmail.com', 'Sr.Noreply - Enviado: '.$fecha.''); // este manda
+        $mail->addAddress('cristhoferfm@hotmail.com', 'Maestranza Misyr');     // este recibe
       //  $mail->addAddress('ellen@example.com');               // Name is optional
       //  $mail->addReplyTo('info@example.com', 'Information');
       //  $mail->addCC('cc@example.com');

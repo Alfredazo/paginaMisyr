@@ -46,3 +46,11 @@
   background-color: #0000003b;
   font-size: 20px;
 }
+
+.alturaTarjeta{
+  min-height: 600px !important;
+}
+
+.posicionarAbajo{
+  bottom: 0px !important;
+}

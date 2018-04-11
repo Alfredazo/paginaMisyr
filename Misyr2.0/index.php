@@ -43,9 +43,9 @@
         </div>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav nav-dropdown nav-right" data-app-modern-menu="true"><li class="nav-item">
-                    <a class="nav-link link text-white display-4" href="https://mobirise.com">
+                    <a class="nav-link link text-white display-4" href="politicas.html">
                         <span class="mbri-home mbr-iconfont mbr-iconfont-btn"></span>
-                        Servicios</a>
+                        Politicas</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link link text-white display-4" href="https://mobirise.com">
@@ -145,80 +145,53 @@
     </div>
 </section>
 
+<!-- Servicios Agregados -->
 <section class="features3 cid-qOi6fqPqOA mbr-parallax-background" id="features3-n">
 
-
-
-
+  <div class="container align-center">
+      <h2 class="pb-3 mbr-fonts-style mbr-section-title display-2">Servicios</h2>
+  </div>
     <div class="container">
-        <div class="media-container-row">
-            <div class="card p-3 col-12 col-md-6 col-lg-4">
-                <div class="card-wrapper">
-                    <div class="card-img">
-                        <img src="assets/images/01.jpg" alt="Mobirise">
-                    </div>
-                    <div class="card-box">
-                        <h4 class="card-title mbr-fonts-style display-7">
-                            No Coding
-                        </h4>
-                        <p class="mbr-text mbr-fonts-style display-7">
-                            Mobirise is an easy website builder - just drop site elements to your page, add content and style it to look the way you like.
-                        </p>
-                    </div>
-                    <div class="mbr-section-btn text-center">
-                        <a href="https://mobirise.com" class="btn btn-primary display-4">
-                            Learn More
-                        </a>
-                    </div>
-                </div>
-            </div>
 
-            <div class="card p-3 col-12 col-md-6 col-lg-4">
-                <div class="card-wrapper">
-                    <div class="card-img">
-                        <img src="assets/images/02.jpg" alt="Mobirise">
-                    </div>
-                    <div class="card-box">
-                        <h4 class="card-title mbr-fonts-style display-7">
-                            Mobile Friendly
-                        </h4>
-                        <p class="mbr-text mbr-fonts-style display-7">
-                            All sites you make with Mobirise are mobile-friendly. You don't have to create a special mobile version of your site.
-                        </p>
-                    </div>
-                    <div class="mbr-section-btn text-center">
-                        <a href="https://mobirise.com" class="btn btn-primary display-4">
-                            Learn More
-                        </a>
-                    </div>
-                </div>
-            </div>
+            <?php
+            require_once 'Datos/jsonServicios.php';
+            for ($i=0; $i <= 2;$i++) {
 
-            <div class="card p-3 col-12 col-md-6 col-lg-4">
-                <div class="card-wrapper">
-                    <div class="card-img">
-                        <img src="assets/images/03.jpg" alt="Mobirise">
-                    </div>
-                    <div class="card-box">
-                        <h4 class="card-title mbr-fonts-style display-7">
-                            Unique Styles
-                        </h4>
-                        <p class="mbr-text mbr-fonts-style display-7">
-                            Mobirise offers many site blocks in several themes, and though these blocks are pre-made, they are flexible.
-                        </p>
-                    </div>
-                    <div class="mbr-section-btn text-center">
-                        <a href="https://mobirise.com" class="btn btn-primary display-4">
-                            Learn More
+        if ($i==0) {
+          print_r('<div class="media-container-row">');
+        }
+        ?>
+          <div class="card p-3 col-12 col-md-6 col-lg-4">
+              <div class="card-wrapper alturaTarjeta">
+                  <div class="card-img">
+                      <img src="<?php print_r($arraylistServicios[$i]->url_imagen_inicio)?>" alt="<?php print_r($arraylistServicios[$i]->nombre_servicio);?>">
+                  </div>
+                  <div class="card-box">
+                      <h4 class="card-title mbr-fonts-style display-7">
+                          <?php print_r($arraylistServicios[$i]->nombre_servicio); ?>
+                      </h4>
+                      <p class="mbr-text mbr-fonts-style display-7 centrarTexto">
+                        <?php print_r($arraylistServicios[$i]->descripcion_breve); ?>
+                      </p>
+                  </div>
+                  <br>
+                      <div class="mbr-section-btn text-center posicionarAbajo">
+                        <a href="servicios.html" class="btn btn-primary display-4">
+                            SABER MÁS
                         </a>
-                    </div>
-                </div>
-            </div>
+                      </div>
+              </div>
+          </div>
 
+        <?php if ($i==2) {
+          print_r('</div>');
+        } ?>
+      <?php } ?>
 
         </div>
     </div>
 </section>
+<!-- Fin de Servicios Agregados -->
 
 <section class="features16 cid-qOib8fYxD4 mbr-parallax-background" id="features16-r">
 
@@ -413,7 +386,7 @@
   <script type="text/javascript">
             $(document).ready(function () {
                 $('.loader2').hide();
-                $('#respuesta').hide();                
+                $('#respuesta').hide();
                 $('#ajax-contact').submit(function () {
                     $(".loader2").fadeOut("slow");
                     $(".loader2").fadeIn("slow");

@@ -22,7 +22,7 @@ require '../vendor/autoload.php';
         $mail->Host = 'smtp.gmail.com';                         // Specify main and backup SMTP servers
         $mail->SMTPAuth = true;                               // Enable SMTP authentication
         $mail->Username = 'misyr.mantencion.nuevo@gmail.com';                  // SMTP username
-        $mail->Password = '';                           // SMTP password
+        $mail->Password = 'misyr2011';                           // SMTP password
         //$mail->SMTPSecure = 'tls';                            // Enable TLS encryption, `ssl` also accepted
         $mail->SMTPOptions = array(
           'ssl' => array(

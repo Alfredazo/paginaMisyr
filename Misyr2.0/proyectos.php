@@ -113,7 +113,7 @@
                             <?php print_r($arraylistProyecto[$i]->nombre_proyecto);?>
                         </h4>
                         <p class="mbr-text mbr-fonts-style display-7">
-                          <?php print_r($arraylistProyecto[$i]->descripcion_breve);?>
+                            <?php print_r($arraylistProyecto[$i]->descripcion_breve);?>
                         </p>
                     </div>
                     <div class="mbr-section-btn text-center">
@@ -124,9 +124,9 @@
                 </div>
             </div>
         <!-- REALIZAR MATRIZ PARA VERIFICAR LOS NUMEROS
-                          0  1 2
-                          3  4 5
-                          6  7 8
+                          0  1 2  1 2 3
+                          3  4 5  4 5 6
+                          6  7 8  7 8 9
                           Donde la fila izquierda es la empezada del div y la fila derecha es la terminada ejemplo (Inicio:0 - Final:2)
                     -->
           <?php

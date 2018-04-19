@@ -18,12 +18,15 @@
   <link rel="stylesheet" href="assets/ProyectoGaleria/theme/css/style.css">
   <link rel="stylesheet" href="assets/ProyectoGaleria/gallery/style.css">
   <link rel="stylesheet" href="assets/ProyectoGaleria/mobirise/css/mbr-additional.css" type="text/css">
+  <link rel="stylesheet" href="assets/mobirise/css/estilos.css" type="text/css">
+
 
 
 
 </head>
 <body>
-  <section class="menu cid-qObvTmrP8r" once="menu" id="menu1-2n">
+
+<section class="menu cid-qObvTmrP8r" once="menu" id="menu1-2n">
     <nav class="navbar navbar-expand beta-menu navbar-dropdown align-items-center navbar-fixed-top navbar-toggleable-sm">
         <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <div class="hamburger">
@@ -57,21 +60,31 @@
 </section>
 
 <section class="engine"><a href="https://mobirise.ws/f">easy site maker</a></section><section class="header9 cid-qPvQMMeYL5 mbr-fullscreen" id="header9-2w">
-
-
-
-
-
+  <?php
+        require_once 'Datos/jsonProyecto.php';
+        if (isset($_GET['id'])==false) {
+           $numeroServicio = 0;
+        }else{
+          $numeroServicio = $_GET['id'];
+        }
+        if ($numeroServicio < 0 || $numeroServicio > sizeOf($arraylistProyecto)) {
+            $numeroServicio = 0;
+        }
+        if (is_numeric($numeroServicio) ==false) {
+            $numeroServicio = 0;
+        }
+         print_r("<h1>".$arraylistProyecto[$numeroServicio]->id_proyecto."</h1>");
+  ?>
     <div class="container">
         <div class="media-container-column mbr-white col-md-8">
             <h1 class="mbr-section-title align-left mbr-bold pb-3 mbr-fonts-style display-1">
-                FULL SCREEN INTRO
+                <?php print_r($arraylistProyecto[$numeroServicio]->nombre_proyecto); ?>
             </h1>
             <h3 class="mbr-section-subtitle align-left mbr-light pb-3 mbr-fonts-style display-2">
-                Beautiful mobile websites
+               <?php print_r($arraylistProyecto[$numeroServicio]->direccion); ?>
             </h3>
             <p class="mbr-text align-left pb-3 mbr-fonts-style display-5">
-                Click any text to edit or style it. Select text to insert a link. Click blue "Gear" icon in the top right corner to hide/show buttons, text, title and change the block background. Click red "+" in the bottom right corner to add a new block. Use the top left menu to create new pages, sites and add themes.
+              <?php print_r($arraylistProyecto[$numeroServicio]->descripcion_proyecto); ?>
             </p>
 
         </div>
@@ -85,9 +98,6 @@
 </section>
 
 <section class="mbr-section article content10 cid-qPvQTYg9yT" id="content10-2y">
-
-
-
     <div class="container">
         <div class="inner-container" style="width: 100%;">
             <hr class="line" style="width: 100%;">
@@ -100,66 +110,32 @@
 
 <section class="mbr-gallery mbr-slider-carousel cid-qPvQPIAQPi" id="gallery3-2x">
    <div>
-        <div>
-          <!-- Filter --><!-- Gallery -->
+        <div class="align-center">
           <div class="mbr-gallery-row">
-            <div class="mbr-gallery-layout-default">
-              <div>
-                <div>
-                  <div class="mbr-gallery-item mbr-gallery-item--p4" data-video-url="false" data-tags="Increíble">
-                    <div href="#lb-gallery3-2x" data-slide-to="0" data-toggle="modal">
-                      <img src="assets/images/01.jpg" alt="">
-                      <span class="icon-focus"></span>
+            <div class="mbr-gallery-layout-default centrarFotos">
+                  <?php
+                     $directorio = opendir("assets/galeria/".$arraylistProyecto[$numeroServicio]->nombre_carpeta);
+                     $contadorFotos = 1;
+                     while($foto = readdir($directorio)){
+                     if($foto!="." && $foto!=".."){
+                   ?>
+                    <div class="mbr-gallery-item mbr-gallery-item--p1">
+                      <div href="#lb-gallery3-2x" data-slide-to="3" data-toggle="modal">
+                        <img src="<?php print_r("assets/galeria/".$arraylistProyecto[$numeroServicio]->nombre_carpeta."/".$foto);?>" alt="">
+                        <span class="icon-focus"></span>
+                      </div>
                     </div>
-                  </div>
-                  <div class="mbr-gallery-item mbr-gallery-item--p4" data-video-url="false" data-tags="Responsive">
-                    <div href="#lb-gallery3-2x" data-slide-to="1" data-toggle="modal">
-                      <img src="assets/images/02.jpg" alt="">
-                      <span class="icon-focus"></span>
-                    </div>
-                  </div>
-                  <div class="mbr-gallery-item mbr-gallery-item--p4" data-video-url="false" data-tags="Creativa">
-                    <div href="#lb-gallery3-2x" data-slide-to="2" data-toggle="modal">
-                      <img src="assets/images/03.jpg" alt="">
-                      <span class="icon-focus"></span>
-                    </div>
-                  </div>
-                  <div class="mbr-gallery-item mbr-gallery-item--p4" data-video-url="false" data-tags="Animada">
-                    <div href="#lb-gallery3-2x" data-slide-to="3" data-toggle="modal">
-                      <img src="assets/images/gallery03.jpg" alt="">
-                      <span class="icon-focus"></span>
-                    </div>
-                  </div>
-                  <div class="mbr-gallery-item mbr-gallery-item--p4" data-video-url="false" data-tags="Increíble">
-                    <div href="#lb-gallery3-2x" data-slide-to="4" data-toggle="modal">
-                      <img src="assets/images/gallery04.jpg" alt="">
-                      <span class="icon-focus"></span>
-                    </div>
-                  </div>
-                  <div class="mbr-gallery-item mbr-gallery-item--p4" data-video-url="false" data-tags="Increíble">
-                    <div href="#lb-gallery3-2x" data-slide-to="5" data-toggle="modal">
-                      <img src="assets/images/gallery05.jpg" alt="">
-                      <span class="icon-focus"></span>
-                    </div>
-                  </div>
-                  <div class="mbr-gallery-item mbr-gallery-item--p4" data-video-url="false" data-tags="Responsive">
-                    <div href="#lb-gallery3-2x" data-slide-to="6" data-toggle="modal">
-                      <img src="assets/images/gallery06.jpg" alt="">
-                      <span class="icon-focus"></span>
-                    </div>
-                  </div>
-                  <div class="mbr-gallery-item mbr-gallery-item--p4" data-video-url="false" data-tags="Animada">
-                    <div href="#lb-gallery3-2x" data-slide-to="7" data-toggle="modal">
-                      <img src="assets/images/gallery07.jpg" alt="">
-                      <span class="icon-focus"></span>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="clearfix">
+                  <?php
+                     }
+                     $contadorFotos = $contadorFotos+1;
+                     }
+                  ?>
               </div>
             </div>
-          </div><!-- Lightbox -->
+            <div class="clearfix">
+            </div>
+          </div>
+          <!-- Lightbox -->
           <div data-app-prevent-settings="" class="mbr-slider modal fade carousel slide" tabindex="-1" data-keyboard="true" data-interval="false" id="lb-gallery3-2x">
             <div class="modal-dialog">
               <div class="modal-content">
@@ -169,26 +145,12 @@
                         <img src="assets/images/gallery00.jpg" alt="">
                       </div>
                       <div class="carousel-item">
-                        <img src="assets/images/gallery01.jpg" alt="">
+                        <img src="assets/images/01.jpg" alt="">
                       </div>
                       <div class="carousel-item">
                         <img src="assets/images/gallery02.jpg" alt="">
                       </div>
-                      <div class="carousel-item">
-                        <img src="assets/images/gallery03.jpg" alt="">
-                      </div>
-                      <div class="carousel-item">
-                        <img src="assets/images/gallery04.jpg" alt="">
-                      </div>
-                      <div class="carousel-item">
-                        <img src="assets/images/gallery05.jpg" alt="">
-                      </div>
-                      <div class="carousel-item">
-                        <img src="assets/images/gallery06.jpg" alt="">
-                      </div>
-                      <div class="carousel-item">
-                        <img src="assets/images/gallery07.jpg" alt="">
-                      </div>
+
                   </div>
                   <a class="carousel-control carousel-control-prev" role="button" data-slide="prev" href="#lb-gallery3-2x">
                     <span class="mbri-left mbr-iconfont" aria-hidden="true"></span>

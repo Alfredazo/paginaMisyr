@@ -6,7 +6,8 @@ $json = '[
                 "descripcion_breve":"Esto es una breve descripción",
                 "descripcion_proyecto":"Esto es una descripcion extensa",
                 "url_imagen":"assets/galeria/proyecto1/01.jpg",
-                "nombre_carpeta":"proyecto1"
+                "nombre_carpeta":"proyecto1",
+                "direccion":"direccion1"
               },
               {
                 "id_proyecto":"1",
@@ -14,7 +15,8 @@ $json = '[
                 "descripcion_breve":"Esto es una breve descripción",
                 "descripcion_proyecto":"Esto es una descripcion extensa",
                 "url_imagen":"assets/galeria/proyecto1/01.jpg",
-                "nombre_carpeta":"proyecto1"
+                "nombre_carpeta":"proyecto2",
+                "direccion":"direccion1"
               },
               {
               "id_proyecto":"2",
@@ -22,14 +24,16 @@ $json = '[
               "descripcion_breve":"Esto es una breve descripción",
               "descripcion_proyecto":"Esto es una descripcion extensa",
               "url_imagen":"assets/galeria/proyecto1/01.jpg",
-              "nombre_carpeta":"proyecto1"
+              "nombre_carpeta":"proyecto3",
+              "direccion":"direccion1"
             },{
             "id_proyecto":"3",
             "nombre_proyecto":"Proyecto 4",
             "descripcion_breve":"Esto es una breve descripción",
             "descripcion_proyecto":"Esto es una descripcion extensa",
             "url_imagen":"assets/galeria/proyecto1/01.jpg",
-            "nombre_carpeta":"proyecto1"
+            "nombre_carpeta":"proyecto1",
+            "direccion":"direccion1"
           },
           {
             "id_proyecto":"4",
@@ -37,7 +41,8 @@ $json = '[
             "descripcion_breve":"Esto es una breve descripción",
             "descripcion_proyecto":"Esto es una descripcion extensa",
             "url_imagen":"assets/galeria/proyecto1/01.jpg",
-            "nombre_carpeta":"proyecto1"
+            "nombre_carpeta":"proyecto1",
+            "direccion":"direccion1"
           },
           {
           "id_proyecto":"5",
@@ -45,7 +50,8 @@ $json = '[
           "descripcion_breve":"Esto es una breve descripción",
           "descripcion_proyecto":"Esto es una descripcion extensa",
           "url_imagen":"assets/galeria/proyecto1/01.jpg",
-          "nombre_carpeta":"proyecto1"
+          "nombre_carpeta":"proyecto1",
+          "direccion":"direccion1"
          }
         ]';
 

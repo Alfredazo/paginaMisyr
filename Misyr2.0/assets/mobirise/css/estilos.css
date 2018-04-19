@@ -54,3 +54,8 @@
 .posicionarAbajo{
   bottom: 0px !important;
 }
+
+.centrarFotos{
+  position: absolute;
+    margin: 0 auto;
+}

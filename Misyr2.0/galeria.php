@@ -38,7 +38,6 @@
         </button>
         <div class="menu-logo">
             <div class="navbar-brand">
-
                 <span class="navbar-caption-wrap"><a class="navbar-caption text-white display-4" href="https://mobirise.com">MAESTRANZA MISYR</a></span>
             </div>
         </div>
@@ -73,7 +72,7 @@
         if (is_numeric($numeroServicio) ==false) {
             $numeroServicio = 0;
         }
-         print_r("<h1>".$arraylistProyecto[$numeroServicio]->id_proyecto."</h1>");
+         //print_r("<h1>".$arraylistProyecto[$numeroServicio]->id_proyecto."</h1>");
   ?>
     <div class="container">
         <div class="media-container-column mbr-white col-md-8">
@@ -109,25 +108,29 @@
 </section>
 
 <section class="mbr-gallery mbr-slider-carousel cid-qPvQPIAQPi" id="gallery3-2x">
+    <?php for ($i=0; $i < 3; $i++) {
+      print_r("<br>");
+    } ?>
    <div>
         <div class="align-center">
           <div class="mbr-gallery-row">
-            <div class="mbr-gallery-layout-default centrarFotos">
+            <div class="mbr-gallery-layout-default">
                   <?php
                      $directorio = opendir("assets/galeria/".$arraylistProyecto[$numeroServicio]->nombre_carpeta);
-                     $contadorFotos = 1;
+                     $contadorFotos = 0;
                      while($foto = readdir($directorio)){
                      if($foto!="." && $foto!=".."){
                    ?>
                     <div class="mbr-gallery-item mbr-gallery-item--p1">
-                      <div href="#lb-gallery3-2x" data-slide-to="3" data-toggle="modal">
-                        <img src="<?php print_r("assets/galeria/".$arraylistProyecto[$numeroServicio]->nombre_carpeta."/".$foto);?>" alt="">
+                      <div href="#lb-gallery3-2x" data-slide-to="<?php print_r($contadorFotos)?>" data-toggle="modal">
+                        <img src="<?php print_r("visor.php?src=assets/galeria/".$arraylistProyecto[$numeroServicio]->nombre_carpeta."/".$foto);?>" alt="">
                         <span class="icon-focus"></span>
                       </div>
                     </div>
                   <?php
+                   $contadorFotos = $contadorFotos+1;
                      }
-                     $contadorFotos = $contadorFotos+1;
+
                      }
                   ?>
               </div>
@@ -136,20 +139,30 @@
             </div>
           </div>
           <!-- Lightbox -->
-          <div data-app-prevent-settings="" class="mbr-slider modal fade carousel slide" tabindex="-1" data-keyboard="true" data-interval="false" id="lb-gallery3-2x">
+          <div data-app-prevent-settings="" class="mbr-slider modal fade carousel slide align-center" tabindex="-1" data-keyboard="true" data-interval="false" id="lb-gallery3-2x">
             <div class="modal-dialog">
-              <div class="modal-content">
+              <div class="modal-content ">
                 <div class="modal-body">
                   <div class="carousel-inner">
-                      <div class="carousel-item active">
-                        <img src="assets/images/gallery00.jpg" alt="">
-                      </div>
-                      <div class="carousel-item">
-                        <img src="assets/images/01.jpg" alt="">
-                      </div>
-                      <div class="carousel-item">
-                        <img src="assets/images/gallery02.jpg" alt="">
-                      </div>
+                    <?php
+                        $directorio = opendir("assets/galeria/".$arraylistProyecto[$numeroServicio]->nombre_carpeta);
+                        $contadorFotos2 = 0;
+                        while($foto = readdir($directorio)){
+                        if($foto!="." && $foto!=".."){
+                         if($contadorFotos2==0){
+                           print_r("<div class='carousel-item active'>");
+                         }else{
+                           print_r("<div class='carousel-item'>");
+                         }
+                     ?>
+                          <img src="<?php print_r("assets/galeria/".$arraylistProyecto[$numeroServicio]->nombre_carpeta."/".$foto);?>" alt="">
+                        </div>
+                    <?php
+                       $contadorFotos2 = $contadorFotos2 +1;
+                      }
+                    }
+                    ?>
+
 
                   </div>
                   <a class="carousel-control carousel-control-prev" role="button" data-slide="prev" href="#lb-gallery3-2x">
@@ -171,6 +184,8 @@
     </div>
 
 </section>
+
+
 
 
   <script src="assets/web/assets/jquery/jquery.min.js"></script>

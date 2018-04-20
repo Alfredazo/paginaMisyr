@@ -59,3 +59,10 @@
   position: absolute;
     margin: 0 auto;
 }
+
+.espaciadoSuperior{
+  padding-top: 500px;
+}
+.ajustarPantalla{
+  max-height: 90% !important; 
+}

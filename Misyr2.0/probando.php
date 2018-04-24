@@ -10,10 +10,136 @@
     <link rel="shortcut icon" href="assets/images/logo21.png" type="image/x-icon">
     <meta name="description" content="">
     <title>Misyr</title>
-
+    <link rel="stylesheet" href="assets/web/assets/mobirise-icons/mobirise-icons.css">
+    <link rel="stylesheet" href="assets/tether/tether.min.css">
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap-grid.min.css">
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap-reboot.min.css">
+    <link rel="stylesheet" href="assets/dropdown/css/style.css">
+    <link rel="stylesheet" href="assets/socicon/css/styles.css">
+    <link rel="stylesheet" href="assets/theme/css/style.css">
+    <link rel="stylesheet" href="assets/mobirise/css/mbr-additional.css" type="text/css">
+    <link rel="stylesheet" href="assets/mobirise/css/estilos.css" type="text/css">
   </head>
   <body>
+    <section class="menu cid-qObvTmrP8r" once="menu" id="menu1-e">
+      <nav class="navbar navbar-expand beta-menu navbar-dropdown align-items-center navbar-fixed-top navbar-toggleable-sm">
+          <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <div class="hamburger">
+                  <span></span>
+                  <span></span>
+                  <span></span>
+                  <span></span>
+              </div>
+          </button>
+          <div class="menu-logo">
+              <div class="navbar-brand">
 
+                  <span class="navbar-caption-wrap"><a class="navbar-caption text-white display-4" href="index.php">MAESTRANZA MISYR</a></span>
+              </div>
+          </div>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav nav-dropdown nav-right" data-app-modern-menu="true">
+                <!-- NAVBAR MOVIL -->
+                <li class="d-block d-sm-none d-sm-block d-md-none d-md-block d-lg-none nav-item" >
+                    <a class="nav-link link text-white display-4 dropdown-toggle" href="#" data-toggle="dropdown">
+                        Inicio
+                    </a>
+                    <div class="dropdown-menu adaptarMenu">
+                      <div class="media-container-row align-center">
+                          <div class="col-12 col-md-12 col-lg-12">
+                            <p>- ¿Quienes Somos?</p>
+                            <p>- Servicios</p>
+                            <p>- Representantes</p>
+                            <p>- Contactanos</p>
+                            <p>- Ubicación</p>
+                          </div>
+                    </div>
+                  </div>
+                </li>
+                <li class="d-block d-sm-none d-sm-block d-md-none d-md-block d-lg-none nav-item" >
+                    <a class="nav-link link text-white display-4 dropdown-toggle" href="#" data-toggle="dropdown">
+                        Servicios
+                    </a>
+                    <div class="dropdown-menu adaptarMenu">
+                      <div class="align-center">
+                          <div class="col-12 col-md-12 col-lg-12">
+                            <p>- Nuestro Lema</p>
+                            <p>- ¿Quienes Somos?</p>
+                            <p>- Servicios</p>
+                            <p>- Representantes</p>
+                            <p>- Contactanos</p>
+                            <p>- Ubicación</p>
+                          </div>
+                    </div>
+                  </div>
+                </li>
+                  <li class="d-block d-sm-none d-sm-block d-md-none d-md-block d-lg-none nav-item">
+                      <a class="nav-link link text-white display-4" href="https://mobirise.com">
+                          <span class="mbri-search mbr-iconfont mbr-iconfont-btn"></span>
+                          About Us
+                      </a>
+                  </li>
+                  <!--Barra de Navegacion PC'S-->
+                  <li class="nav-item" >
+                      <a class="nav-link link text-white display-4 dropdown-toggle" href="#" data-toggle="dropdown">
+                          <span class="mbri-search mbr-iconfont mbr-iconfont-btn"></span>
+                          Menu
+                      </a>
+                      <div class="dropdown-menu adaptarMenu">
+                        <a class="dropdown-item" href="#">Link 1</a>
+                        <a class="dropdown-item" href="#">Link 2</a>
+                        <a class="dropdown-item" href="#">Link 3</a>
+                      </div>
+                  </li>
+                  <li class="d-none d-lg-block d-xl-block nav-item">
+                      <a class="nav-link link text-white display-4 dropdown-toggle" href="#" data-toggle="dropdown">
+                          <span class="mbri-search mbr-iconfont mbr-iconfont-btn"></span>
+                          MENU
+                      </a>
+                      <div class="dropdown-menu adaptarMenu">
+                        <div class="media-container-row">
+                            <div class="col-12 col-md-6 col-lg-3 margenIzquierda">
+                              <span><h3>Inicio</h3></span>
+                              <p>- Nuestro Lema</p>
+                              <p>- ¿Quienes Somos?</p>
+                              <p>- Servicios</p>
+                              <p>- Representantes</p>
+                              <p>- Contactanos</p>
+                              <p>- Ubicación</p>
+                            </div>
+
+                            <div class="col-12 col-md-6 col-lg-3">
+                              <span><h3>Quienes Somos</h3></span>
+                              <p>- ¿Qué es Maestranza Misyr?</p>
+                              <p>- Biografía</p>
+                              <p>- Trabajadores</p>
+                              <p>- Proyectos</p>
+                            </div>
+
+                            <div class="col-12 col-md-6 col-lg-3">
+                              <span><h3>Servicios</h3></span>
+                              <p>- ¿Qué es Maestranza Misyr?</p>
+                              <p>- Biografía</p>
+                              <p>- Trabajadores</p>
+                              <p>- Proyectos</p>
+                            </div>
+
+                            <div class="col-12 col-md-6 col-lg-3">
+                              <span><h3>Servicios</h3></span>
+                              <p>- ¿Qué es Maestranza Misyr?</p>
+                              <p>- Biografía</p>
+                              <p>- Trabajadores</p>
+                              <p>- Proyectos</p>
+                            </div>
+
+
+                      </div>
+                  </li>
+                </ul>
+          </div>
+      </nav>
+    </section>
     <section class="mbr-section form1 cid-qOio2M6D9S mbr-parallax-background" id="form1-w">
         <div class="container">
             <div class="row justify-content-center">

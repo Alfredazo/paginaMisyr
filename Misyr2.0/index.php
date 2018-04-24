@@ -23,9 +23,6 @@
 </head>
 <body>
   <section class="menu cid-qObvTmrP8r" once="menu" id="menu1-e">
-
-
-
     <nav class="navbar navbar-expand beta-menu navbar-dropdown align-items-center navbar-fixed-top navbar-toggleable-sm">
         <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <div class="hamburger">
@@ -37,24 +34,27 @@
         </button>
         <div class="menu-logo">
             <div class="navbar-brand">
-
                 <span class="navbar-caption-wrap"><a class="navbar-caption text-white display-4" href="index.php">MAESTRANZA MISYR</a></span>
             </div>
         </div>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav nav-dropdown nav-right" data-app-modern-menu="true"><li class="nav-item">
+            <ul class="navbar-nav nav-dropdown nav-right" data-app-modern-menu="true">
+                <li class="nav-item">
                     <a class="nav-link link text-white display-4" href="politicas.html">
                         <span class="mbri-home mbr-iconfont mbr-iconfont-btn"></span>
-                        Politicas</a>
+                        Politicas
+                    </a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link link text-white display-4" href="https://mobirise.com">
                         <span class="mbri-search mbr-iconfont mbr-iconfont-btn"></span>
                         About Us
                     </a>
-                </li></ul>
-
+                </li>             
+            </ul>
         </div>
+
+
     </nav>
 </section>
 

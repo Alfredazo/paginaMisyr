@@ -70,8 +70,25 @@
 .adaptarMenu{
   width: 100% !important;
   align-content: center;
+  height: 700px;
+  background: gray;
+  color:white;
 }
 
 .margenIzquierda{
   padding-left: 100px;
+}
+
+.cambiarCursor:hover{
+  cursor: hand;
+  cursor:pointer;
+}
+
+.cambiarColorTitulo{
+  color:white;
+  font-weight: bold;
+}
+.colorFacebook{
+  color:	#3b5998;
+  font-weight: bold;
 }

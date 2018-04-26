@@ -34,29 +34,152 @@
         </button>
         <div class="menu-logo">
             <div class="navbar-brand">
+
                 <span class="navbar-caption-wrap"><a class="navbar-caption text-white display-4" href="index.php">MAESTRANZA MISYR</a></span>
             </div>
         </div>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav nav-dropdown nav-right" data-app-modern-menu="true">
-                <li class="nav-item">
-                    <a class="nav-link link text-white display-4" href="politicas.html">
-                        <span class="mbri-home mbr-iconfont mbr-iconfont-btn"></span>
-                        Politicas
+              <!-- NAVBAR MOVIL -->
+              <li class="d-block d-sm-none d-sm-block d-md-none d-md-block d-lg-none nav-item" >
+                      <a class="nav-link link text-white display-4 dropdown-toggle" href="#" data-toggle="dropdown">
+                          Menú
+                      </a>
+                      <div class="dropdown-menu adaptarMenuMobile">
+                        <div class="media-container-row ">
+                            <div class="col-12 col-md-12 col-lg-12 ">
+                              <a class="dropdown-item" href="index.php">Volver A Página Principal</a>
+                                <div class="dropdown-divider"></div>
+                                </div>
+                                <div class="col-12 col-md-12 col-lg-12 ">
+                            <a class="dropdown-item" href="quienesSomos.html">¿Quienes Somos?</a>
+                              <div class="dropdown-divider"></div>
+                              </div>
+                              <div class="col-12 col-md-12 col-lg-12">
+                            <a class="dropdown-item" href="servicios.html">Nuestros Servicios</a>
+                              <div class="dropdown-divider"></div>
+                              </div>
+                              <div class="col-12 col-md-12 col-lg-12">
+                            <a class="dropdown-item" href="proyectos.php">Nuestros Proyectos</a>
+                              <div class="dropdown-divider"></div>
+                              </div>
+                              <div class="col-12 col-md-12 col-lg-12">
+                            <a class="dropdown-item" href="politicas.html">Politicas de Prevencion</a>
+                              <div class="dropdown-divider"></div>
+                              </div>
+                              <div class="col-12 col-md-12 col-lg-12">
+                            <a class="dropdown-item" href="procedimientos.html">Nuestros Procedimientos</a>
+                              <div class="dropdown-divider"></div>
+                              </div>
+                              <div class="col-12 col-md-12 col-lg-12">
+                            <a class="dropdown-item" href="galeria.php">Galeria</a>
+                            </div>
+                      </div>
+                    </div>
+              </li>
+              <li class="d-block d-sm-none d-sm-block d-md-none d-md-block d-lg-none nav-item">
+                  <a class="nav-link link text-white display-4" href="index.php#contactanos">
+                      Contactanos
+                  </a>
+              </li>
+                <!--Barra de Navegacion PC'S-->
+                <li class="d-none d-lg-block d-xl-block nav-item">
+                    <a class="nav-link link text-white display-4" href="index.php">
+                      <span class="mbri-home mbr-iconfont mbr-iconfont-btn"></span>
+                        Inicio
                     </a>
                 </li>
-                <li class="nav-item">
-                    <a class="nav-link link text-white display-4" href="https://mobirise.com">
-                        <span class="mbri-search mbr-iconfont mbr-iconfont-btn"></span>
-                        About Us
+                <li class="d-none d-lg-block d-xl-block nav-item">
+                    <a class="nav-link link text-white display-4" href="servicios.html">
+                        <span class="glyphicon glyphicon-envelope"></span>
+                        Servicio
                     </a>
-                </li>             
-            </ul>
+                </li>
+                <li class="d-none d-lg-block d-xl-block nav-item">
+                    <a class="nav-link link text-white display-4" href="index.php#contactanos">
+                        <span class="glyphicon glyphicon-envelope"></span>
+                        Contactanos
+                    </a>
+                </li>
+                <li class="d-none d-lg-block d-xl-block nav-item">
+                    <a class="nav-link link text-white display-4" href="proyectos.php">
+                        <span class="glyphicon glyphicon-envelope"></span>
+                        Proyectos
+                    </a>
+                </li>
+                <li class="d-none d-lg-block d-xl-block nav-item">
+                    <a class="nav-link link text-white display-4 dropdown-toggle" href="#" data-toggle="dropdown">
+                        <!--<span class="mbri-search mbr-iconfont mbr-iconfont-btn"></span> -->
+                        MENU
+                    </a>
+                    <div class="dropdown-menu adaptarMenu">
+                      <div class="media-container-row">
+                          <div class="col-12 col-md-6 col-lg-3 margenIzquierda">
+                            <span><h3>Inicio</h3></span>
+                            <p class="cambiarCursor" onclick="location.href='index.php'">- Nuestro Lema</p>
+                            <p class="cambiarCursor" onclick="location.href='index.php#quienesSomos'">- ¿Quienes Somos?</p>
+                            <p class="cambiarCursor" onclick="location.href='index.php#servicios'">- Servicios</p>
+                            <p class="cambiarCursor" onclick="location.href='index.php#representates'">- Representantes</p>
+                            <p class="cambiarCursor" onclick="location.href='index.php#contactanos'">- Contactanos</p>
+                            <p class="cambiarCursor" onclick="location.href='index.php#ubicacion'">- Ubicación</p>
+                          </div>
+
+                          <div class="col-12 col-md-6 col-lg-3">
+                            <span><h3>Quienes Somos</h3></span>
+                            <p class="cambiarCursor" onclick="location.href='quienesSomos.html#nosotros'">- ¿Qué es Maestranza Misyr?</p>
+                            <p class="cambiarCursor" onclick="location.href='quienesSomos.html#biografia'">- Biografía</p>
+                            <p class="cambiarCursor" onclick="location.href='quienesSomos.html#trabajadores'">- Trabajadores</p>
+                            <p class="cambiarCursor" onclick="location.href='quienesSomos.html#proyectos'">- Proyectos</p>
+                          </div>
+
+                          <div class="col-12 col-md-6 col-lg-3">
+                            <span><h3>Servicios</h3></span>
+                            <p class="cambiarCursor" onclick="location.href='servicios.html#trazado'">- Trazado Calderería</p>
+                            <p class="cambiarCursor" onclick="location.href='servicios.html#mecanica'">- Mecanica</p>
+                            <p class="cambiarCursor" onclick="location.href='servicios.html#oxicorte'">- Oxicorte</p>
+                            <p class="cambiarCursor" onclick="location.href='servicios.html#izaje'">- Izaje y Traslado</p>
+                            <p class="cambiarCursor" onclick="location.href='servicios.html#soldadura'">- Soldadura</p>
+                            <p class="cambiarCursor" onclick="location.href='servicios.html'">- Ver todos nuestros servicios</p>
+                          </div>
+
+                          <div class="col-12 col-md-6 col-lg-3">
+                            <span><h3>Proyectos</h3></span>
+                            <p class="cambiarCursor" onclick="location.href='proyectos.php'">- Proyectos</p>
+                            <p class="cambiarCursor" onclick="location.href='proyectos.php'">- Proyectos</p>
+                            <p class="cambiarCursor" onclick="location.href='proyectos.php'">- Proyectos</p>
+                            <p class="cambiarCursor" onclick="location.href='proyectos.php'">- Ver todos nuestros proyectos</p>
+
+                          </div>
+                    </div>
+
+                    <div class="media-container-row">
+                      <div class="col-12 col-md-6 col-lg-4 margenIzquierda">
+                        <span><h3>Procedimientos</h3></span>
+                        <p class="cambiarCursor" onclick="location.href='procedimientos.html#trabajoOficina'">- Trabajos en oficina</p>
+                        <p class="cambiarCursor" onclick="location.href='procedimientos.html#oxicorte'">- Oxicorte</p>
+                        <p class="cambiarCursor" onclick="location.href='procedimientos.html#epp'">- Uso correcto EPP</p>
+                        <p class="cambiarCursor" onclick="location.href='procedimientos.html#esmeril'">- Uso esmeril angular</p>
+                        <p class="cambiarCursor" onclick="location.href='procedimientos.html'">- Ver todos nuestros procedimientos</p>
+                      </div>
+                      <div class="col-12 col-md-6 col-lg-4">
+                        <span><h3>Politicas de Seguridad</h3></span>
+                        <p class="cambiarCursor" onclick="location.href='politicas.html#ambiente'">- Calidad y medioambiente</p>
+                        <p class="cambiarCursor" onclick="location.href='politicas.html#salud'">- Seguridad y salud ocupacional</p>
+                        <p class="cambiarCursor" onclick="location.href='politicas.html#tabaco'">- Tabaco, alcohol y drogas</p>
+                        <p class="cambiarCursor" onclick="location.href='politicas.html'">- Ver todos nuestros politicas de seguridad</p>
+
+                      </div>
+                      <div class="col-12 col-md-6 col-lg-4">
+                        <span><h3>Redes Sociales</h3></span>
+                        <p class="cambiarCursor" onclick="location.href='https://www.facebook.com/Maestranza-Misyr-878978508881220/?ref=br_tf'">- FACEBOOK</p>
+                        <p class="cambiarCursor" onclick="location.href='#'">- Youtube</p>
+                      </div>
+                    </div>
+                </li>
+              </ul>
         </div>
-
-
     </nav>
-</section>
+  </section>
 
 <section class="engine"><a href="https://mobirise.ws/g">create own website</a></section>
 
@@ -129,7 +252,9 @@
         </div>
         <a data-app-prevent-settings="" class="carousel-control carousel-control-prev" role="button" data-slide="prev" href="#slider1-o"><span aria-hidden="true" class="mbri-left mbr-iconfont"></span><span class="sr-only">Previous</span></a><a data-app-prevent-settings="" class="carousel-control carousel-control-next" role="button" data-slide="next" href="#slider1-o"><span aria-hidden="true" class="mbri-right mbr-iconfont"></span><span class="sr-only">Next</span></a></div></div>
 </section>
+<div id="quienesSomos">
 
+</div>
 <section class="header1 cid-qOi3K7wueN mbr-parallax-background" id="header1-h">
     <div class="container">
         <div class="row justify-content-md-center">
@@ -144,12 +269,14 @@
         </div>
     </div>
 </section>
+<div id="servicios">
 
+</div>
 <!-- Servicios Agregados -->
 <section class="features3 cid-qOi6fqPqOA mbr-parallax-background" id="features3-n">
 
   <div class="container align-center">
-      <h2 class="pb-3 mbr-fonts-style mbr-section-title display-2">Servicios</h2>
+      <h2 class="pb-3 mbr-fonts-style mbr-section-title display-2 cambiarColorTitulo">Servicios</h2>
   </div>
     <div class="container">
 
@@ -192,7 +319,9 @@
     </div>
 </section>
 <!-- Fin de Servicios Agregados -->
+<div id="representates">
 
+</div>
 <section class="features16 cid-qOib8fYxD4 mbr-parallax-background" id="features16-r">
 
 
@@ -256,7 +385,9 @@
             </div></div>
     </div>
 </section>
+<div id="contactanos">
 
+</div>
 <section class="mbr-section form1 cid-qOio2M6D9S mbr-parallax-background" id="form1-w">
     <div class="container">
         <div class="row justify-content-center">
@@ -310,7 +441,9 @@
             </div>
           </div>
 </section>
+<div id="ubicacion">
 
+</div>
 <section class="piedepagina mbr-parallax-background" id="footer1-e" data-rv-view="45">
     <div class="mbr-overlay" style="opacity: 0.5; background-color: rgb(60, 60, 60);"></div>
 
@@ -325,9 +458,12 @@
             </div>
             <div class="col-12 col-md-3 mbr-fonts-style display-7">
                 <p class="mbr-text"><strong>Redes Sociales</strong><br>
-                    <br>FACEBOOK<br><br><br>
+                    <br>
+                    <span class="cambiarCursor" onclick="location.href='https://www.facebook.com/Maestranza-Misyr-878978508881220/?ref=br_tf'">FACEBOOK</span>
+                    <img  class="cambiarCursor" src="assets/images/fb.png" width="60px" height="60px" onclick="location.href='https://www.facebook.com/Maestranza-Misyr-878978508881220/?ref=br_tf'">
+                    <br><br><br>
                     <br><strong>Trabaja con Nosotros</strong><br>
-                    <br>?Te gustaria trabajar con nosotros? PINCHA AQUI</p>
+                    <br>¿Te gustaria trabajar con nosotros? <a href="#">PINCHA AQUI</a></p>
             </div>
           <div class="col-12 col-md-6">
             <div class="google-maps">
@@ -343,27 +479,11 @@
                 </div>
             </div>
             <div class="media-container-row mbr-white">
-                <div class="col-sm-6 copyright">
+                <div class="col-sm-12 copyright alinearCentro">
                     <p class="mbr-text mbr-fonts-style display-7">
                         © Todos los Derechos Reservados a Maestranza Misyr Ltda.</p>
                 </div>
-                <div class="col-md-6">
-                    <div class="social-list align-right">
-
-
-
-                        <div class="soc-item">
-                            <a href="https://twitter.com/mobirise" target="_blank">
-                                <span class="socicon-twitter socicon mbr-iconfont mbr-iconfont-social" media-simple="true"></span>
-                            </a>
-
-                            <a href="https://www.facebook.com/pages/Mobirise/1616226671953247" target="_blank">
-                                <span class="socicon-facebook socicon mbr-iconfont mbr-iconfont-social" media-simple="true"></span>
-                            </a>
-                       </div>
-                </div>
-            </div>
-        </div>
+           </div>
     </div>
 </section>
 

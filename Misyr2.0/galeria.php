@@ -25,8 +25,7 @@
 
 </head>
 <body>
-
-<section class="menu cid-qObvTmrP8r" once="menu" id="menu1-2n">
+  <section class="menu cid-qObvTmrP8r" once="menu" id="menu1-e">
     <nav class="navbar navbar-expand beta-menu navbar-dropdown align-items-center navbar-fixed-top navbar-toggleable-sm">
         <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <div class="hamburger">
@@ -38,27 +37,153 @@
         </button>
         <div class="menu-logo">
             <div class="navbar-brand">
-                <span class="navbar-caption-wrap"><a class="navbar-caption text-white display-4" href="https://mobirise.com">MAESTRANZA MISYR</a></span>
+
+                <span class="navbar-caption-wrap"><a class="navbar-caption text-white display-4" href="index.php">MAESTRANZA MISYR</a></span>
             </div>
         </div>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav nav-dropdown nav-right" data-app-modern-menu="true"><li class="nav-item">
-                    <a class="nav-link link text-white display-4" href="https://mobirise.com">
-                        <span class="mbri-home mbr-iconfont mbr-iconfont-btn"></span>
-                        Servicios</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link link text-white display-4" href="https://mobirise.com">
-                        <span class="mbri-search mbr-iconfont mbr-iconfont-btn"></span>
-                        About Us
+            <ul class="navbar-nav nav-dropdown nav-right" data-app-modern-menu="true">
+              <!-- NAVBAR MOVIL -->
+              <li class="d-block d-sm-none d-sm-block d-md-none d-md-block d-lg-none nav-item" >
+                      <a class="nav-link link text-white display-4 dropdown-toggle" href="#" data-toggle="dropdown">
+                          Menú
+                      </a>
+                      <div class="dropdown-menu adaptarMenuMobile">
+                        <div class="media-container-row ">
+                            <div class="col-12 col-md-12 col-lg-12 ">
+                              <a class="dropdown-item" href="index.php">Volver A Página Principal</a>
+                                <div class="dropdown-divider"></div>
+                                </div>
+                                <div class="col-12 col-md-12 col-lg-12 ">
+                            <a class="dropdown-item" href="quienesSomos.html">¿Quienes Somos?</a>
+                              <div class="dropdown-divider"></div>
+                              </div>
+                              <div class="col-12 col-md-12 col-lg-12">
+                            <a class="dropdown-item" href="servicios.html">Nuestros Servicios</a>
+                              <div class="dropdown-divider"></div>
+                              </div>
+                              <div class="col-12 col-md-12 col-lg-12">
+                            <a class="dropdown-item" href="proyectos.php">Nuestros Proyectos</a>
+                              <div class="dropdown-divider"></div>
+                              </div>
+                              <div class="col-12 col-md-12 col-lg-12">
+                            <a class="dropdown-item" href="politicas.html">Politicas de Prevencion</a>
+                              <div class="dropdown-divider"></div>
+                              </div>
+                              <div class="col-12 col-md-12 col-lg-12">
+                            <a class="dropdown-item" href="procedimientos.html">Nuestros Procedimientos</a>
+                              <div class="dropdown-divider"></div>
+                              </div>
+                              <div class="col-12 col-md-12 col-lg-12">
+                            <a class="dropdown-item" href="galeria.php">Galeria</a>
+                            </div>
+                      </div>
+                    </div>
+              </li>
+              <li class="d-block d-sm-none d-sm-block d-md-none d-md-block d-lg-none nav-item">
+                  <a class="nav-link link text-white display-4" href="index.php#contactanos">
+                      Contactanos
+                  </a>
+              </li>
+                <!--Barra de Navegacion PC'S-->
+                <li class="d-none d-lg-block d-xl-block nav-item">
+                    <a class="nav-link link text-white display-4" href="index.php">
+                      <span class="mbri-home mbr-iconfont mbr-iconfont-btn"></span>
+                        Inicio
                     </a>
-                </li></ul>
+                </li>
+                <li class="d-none d-lg-block d-xl-block nav-item">
+                    <a class="nav-link link text-white display-4" href="servicios.html">
+                        <span class="glyphicon glyphicon-envelope"></span>
+                        Servicio
+                    </a>
+                </li>
+                <li class="d-none d-lg-block d-xl-block nav-item">
+                    <a class="nav-link link text-white display-4" href="index.php#contactanos">
+                        <span class="glyphicon glyphicon-envelope"></span>
+                        Contactanos
+                    </a>
+                </li>
+                <li class="d-none d-lg-block d-xl-block nav-item">
+                    <a class="nav-link link text-white display-4" href="proyectos.php">
+                        <span class="glyphicon glyphicon-envelope"></span>
+                        Proyectos
+                    </a>
+                </li>
+                <li class="d-none d-lg-block d-xl-block nav-item">
+                    <a class="nav-link link text-white display-4 dropdown-toggle" href="#" data-toggle="dropdown">
+                        <!--<span class="mbri-search mbr-iconfont mbr-iconfont-btn"></span> -->
+                        MENU
+                    </a>
+                    <div class="dropdown-menu adaptarMenu">
+                      <div class="media-container-row">
+                          <div class="col-12 col-md-6 col-lg-3 margenIzquierda">
+                            <span><h3>Inicio</h3></span>
+                            <p class="cambiarCursor" onclick="location.href='index.php'">- Nuestro Lema</p>
+                            <p class="cambiarCursor" onclick="location.href='index.php#quienesSomos'">- ¿Quienes Somos?</p>
+                            <p class="cambiarCursor" onclick="location.href='index.php#servicios'">- Servicios</p>
+                            <p class="cambiarCursor" onclick="location.href='index.php#representates'">- Representantes</p>
+                            <p class="cambiarCursor" onclick="location.href='index.php#contactanos'">- Contactanos</p>
+                            <p class="cambiarCursor" onclick="location.href='index.php#ubicacion'">- Ubicación</p>
+                          </div>
 
+                          <div class="col-12 col-md-6 col-lg-3">
+                            <span><h3>Quienes Somos</h3></span>
+                            <p class="cambiarCursor" onclick="location.href='quienesSomos.html#nosotros'">- ¿Qué es Maestranza Misyr?</p>
+                            <p class="cambiarCursor" onclick="location.href='quienesSomos.html#biografia'">- Biografía</p>
+                            <p class="cambiarCursor" onclick="location.href='quienesSomos.html#trabajadores'">- Trabajadores</p>
+                            <p class="cambiarCursor" onclick="location.href='quienesSomos.html#proyectos'">- Proyectos</p>
+                          </div>
+
+                          <div class="col-12 col-md-6 col-lg-3">
+                            <span><h3>Servicios</h3></span>
+                            <p class="cambiarCursor" onclick="location.href='servicios.html#trazado'">- Trazado Calderería</p>
+                            <p class="cambiarCursor" onclick="location.href='servicios.html#mecanica'">- Mecanica</p>
+                            <p class="cambiarCursor" onclick="location.href='servicios.html#oxicorte'">- Oxicorte</p>
+                            <p class="cambiarCursor" onclick="location.href='servicios.html#izaje'">- Izaje y Traslado</p>
+                            <p class="cambiarCursor" onclick="location.href='servicios.html#soldadura'">- Soldadura</p>
+                            <p class="cambiarCursor" onclick="location.href='servicios.html'">- Ver todos nuestros servicios</p>
+                          </div>
+
+                          <div class="col-12 col-md-6 col-lg-3">
+                            <span><h3>Proyectos</h3></span>
+                            <p class="cambiarCursor" onclick="location.href='proyectos.php'">- Proyectos</p>
+                            <p class="cambiarCursor" onclick="location.href='proyectos.php'">- Proyectos</p>
+                            <p class="cambiarCursor" onclick="location.href='proyectos.php'">- Proyectos</p>
+                            <p class="cambiarCursor" onclick="location.href='proyectos.php'">- Ver todos nuestros proyectos</p>
+
+                          </div>
+                    </div>
+
+                    <div class="media-container-row">
+                      <div class="col-12 col-md-6 col-lg-4 margenIzquierda">
+                        <span><h3>Procedimientos</h3></span>
+                        <p class="cambiarCursor" onclick="location.href='procedimientos.html#trabajoOficina'">- Trabajos en oficina</p>
+                        <p class="cambiarCursor" onclick="location.href='procedimientos.html#oxicorte'">- Oxicorte</p>
+                        <p class="cambiarCursor" onclick="location.href='procedimientos.html#epp'">- Uso correcto EPP</p>
+                        <p class="cambiarCursor" onclick="location.href='procedimientos.html#esmeril'">- Uso esmeril angular</p>
+                        <p class="cambiarCursor" onclick="location.href='procedimientos.html'">- Ver todos nuestros procedimientos</p>
+                      </div>
+                      <div class="col-12 col-md-6 col-lg-4">
+                        <span><h3>Politicas de Seguridad</h3></span>
+                        <p class="cambiarCursor" onclick="location.href='politicas.html#ambiente'">- Calidad y medioambiente</p>
+                        <p class="cambiarCursor" onclick="location.href='politicas.html#salud'">- Seguridad y salud ocupacional</p>
+                        <p class="cambiarCursor" onclick="location.href='politicas.html#tabaco'">- Tabaco, alcohol y drogas</p>
+                        <p class="cambiarCursor" onclick="location.href='politicas.html'">- Ver todos nuestros politicas de seguridad</p>
+
+                      </div>
+                      <div class="col-12 col-md-6 col-lg-4">
+                        <span><h3>Redes Sociales</h3></span>
+                        <p class="cambiarCursor" onclick="location.href='https://www.facebook.com/Maestranza-Misyr-878978508881220/?ref=br_tf'">- FACEBOOK</p>
+                        <p class="cambiarCursor" onclick="location.href='#'">- Youtube</p>
+                      </div>
+                    </div>
+                </li>
+              </ul>
         </div>
     </nav>
-</section>
-
-<section class="engine"><a href="https://mobirise.ws/f">easy site maker</a></section><section class="header9 cid-qPvQMMeYL5 mbr-fullscreen" id="header9-2w">
+  </section>
+  <section class="engine"><a href="https://mobirise.ws/f">easy site maker</a></section><section class="header9 cid-qPvQMMeYL5 mbr-fullscreen" id="header9-2w">
   <?php
         require_once 'Datos/jsonProyecto.php';
         if (isset($_GET['id'])==false) {
